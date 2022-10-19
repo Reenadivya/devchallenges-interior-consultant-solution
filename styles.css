@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300;400&family=Lora:wght@400;500;600&family=Montserrat:wght@200;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #181719;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+li {
+  list-style: none;
+  padding: 32px;
+}
+
+.nav__bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.nav__bar--left {
+  font-family: "Crimson Pro";
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 8px;
+}
+
+.nav__bar--right {
+  font-family: "Montserrat";
+  padding-right: 48px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav__bar--link {
+  position: relative;
+}
+
+.nav__bar--link:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  background-color: #ffffff;
+  transition: all 300ms ease;
+}
+
+.nav__bar--link:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+#main__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 40px;
+}
+
+.text__container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.text__container--heading {
+  font-family: "Lora";
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.text__container--para {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 56px 0px 64px 0px;
+}
+
+.text__container--link {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.text__container--para,
+.text__container--link {
+  font-family: "Montserrat";
+}
+
+.image__container {
+  width: 70%;
+}
+
+.big__img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.card__container {
+  color: #181719;
+  border: 1px solid #181719;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  width: 40%;
+  height: 189px;
+  padding: 24px;
+  right: -350px;
+  bottom: 100px;
+}
+
+.card__container--text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 24px;
+  left: 140px;
+}
+
+.card__container--img {
+  border-radius: 50%;
+  width: 85px;
+}
+
+.card__container--header {
+  font-family: "Montserrat";
+  color: #ffffff;
+  padding-bottom: 12px;
+}
+
+.card__container--subheader {
+  font-family: "Montserrat";
+  color: #828282;
+}
+
+.card__container--para {
+  font-family: "Lora";
+  width: 287px;
+  padding-top: 12px;
+  color: #ffffff;
+}
+
+footer {
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: #a9a9a9;
+}
+
+.fa-solid {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.btn__menu {
+  display: none;
+  cursor: pointer;
+  border: none;
+}
+
+.menu__backdrop {
+  font-family: "Montserrat";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.menu--open .menu__backdrop {
+  display: flex;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn__menu--close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  padding: 8px;
+}
+
+/* MEDIA RESPONSIVESNESS */
+
+@media (max-width: 768px) {
+  .nav__bar--right {
+    display: none;
+  }
+
+  .btn__menu {
+    display: block;
+  }
+
+  .nav__bar {
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+  body {
+    min-height: 100vh;
+  }
+
+  #main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .text__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    right: 96px;
+    margin: 24px 0;
+  }
+
+  .text__container--heading {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .text__container--para {
+    font-size: 18px;
+    font-weight: 200;
+    padding: 48px 0px 48px 0px;
+  }
+
+  .image__container {
+    width: 50%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .big__img {
+    border-radius: 8px;
+    width: 500px;
+  }
+
+  .card__container {
+    width: 100%;
+    right: -10px;
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .btn__menu {
+    display: block;
+  }
+
+  .card__container {
+    width: 400px;
+  }
+}

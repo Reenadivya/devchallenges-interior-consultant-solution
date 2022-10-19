@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/116ba3a803.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav__bar">
+      <div class="nav__bar--left">
+        <p>THIS INTERIOR</p>
+      </div>
+      <div class="nav__bar--right">
+        <ul>
+          <li class="nav__bar--right-li">
+            <a href="#" class="nav__bar--link">Home</a>
+          </li>
+
+          <li class="nav__bar--right-li">
+            <a href="#" class="nav__bar--link">Collections</a>
+          </li>
+
+          <li class="nav__bar--right-li">
+            <a href="#" class="nav__bar--link">About</a>
+          </li>
+
+          <li class="nav__bar--right-li">
+            <a href="#" class="nav__bar--link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <button class="btn__menu" onclick="openMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="menu__links">
+          <li class="menu__list">
+            <a href="" class="menu__list nav__bar--link">Home</a>
+          </li>
+          <li class="menu__list">
+            <a href="" class="menu__list nav__bar--link">Collection</a>
+          </li>
+          <li class="menu__list">
+            <a href="" class="menu__list nav__bar--link">About</a>
+          </li>
+          <li class="menu__list">
+            <a href="" class="menu__list nav__bar--link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="main__container">
+      <div class="text__container">
+        <h1 class="text__container--heading">Modern interior</h1>
+        <p class="text__container--para">
+          A full-Service residential & commercial interior design and staging
+          company offering professional organizing & eco-services.
+        </p>
+        <h3 class="text__container--link">Read more →</h3>
+      </div>
+
+      <div class="image__container">
+        <img src="./photo1.png" alt="" class="big__img" />
+        <div class="card__container">
+          <img class="card__container--img" src="./photo2.png" alt="" />
+          <div class="card__container--text">
+            <p class="card__container--header">Aliza Webber</p>
+            <p class="card__container--subheader">Interior designer</p>
+          </div>
+          <h2 class="card__container--para">
+            Designed in 2020 by Aliza Webber
+          </h2>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <p>
+      created by
+      <a href="https://github.com/Reenadivya" target="_blank">Reena Divya</a> -
+      devChallenges.io
+    </p>
+  </footer>
+</html>
